@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authorization">
+
+    <fragment
+        android:id="@+id/category"
+        android:name="com.example.myapplicationooooo.category"
+        android:label="category" >
+        <action
+            android:id="@+id/action_category_to_razdel_medit"
+            app:destination="@id/razdel_medit" />
+        <action
+            android:id="@+id/action_category_to_uoga"
+            app:destination="@id/uoga" />
+        <action
+            android:id="@+id/action_category_to_stat"
+            app:destination="@id/stat" />
+        <action
+            android:id="@+id/action_category_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_category_to_patternStat"
+            app:destination="@id/patternStat" />
+        <action
+            android:id="@+id/action_category_to_razdel_breath"
+            app:destination="@id/razdel_breath" />
+        <action
+            android:id="@+id/action_category_to_razdel_zaradka"
+            app:destination="@id/razdel_zaradka" />
+        <action
+            android:id="@+id/action_category_to_authorization"
+            app:destination="@id/authorization" />
+        <action
+            android:id="@+id/action_category_to_registration"
+            app:destination="@id/registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/razdel_medit"
+        android:name="com.example.myapplicationooooo.razdel_medit"
+        android:label="razdel_medit" >
+        <action
+            android:id="@+id/action_razdel_medit_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_razdel_medit_to_patternMedia"
+            app:destination="@id/patternMedia" />
+    </fragment>
+    <fragment
+        android:id="@+id/uoga"
+        android:name="com.example.myapplicationooooo.razdel_uoga"
+        android:label="fragment_uoga"
+        tools:layout="@layout/fragment_razdel_uoga" >
+        <action
+            android:id="@+id/action_uoga_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_uoga_to_patternMedia"
+            app:destination="@id/patternMedia" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.myapplicationooooo.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_profile_to_stat"
+            app:destination="@id/stat" />
+    </fragment>
+    <fragment
+        android:id="@+id/stat"
+        android:name="com.example.myapplicationooooo.stat"
+        android:label="fragment_stat"
+        tools:layout="@layout/fragment_stat" >
+        <action
+            android:id="@+id/action_stat_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_stat_to_patternStat"
+            app:destination="@id/patternStat" />
+        <action
+            android:id="@+id/action_stat_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/patternStat"
+        android:name="com.example.myapplicationooooo.patternStat"
+        android:label="PatternStat" >
+        <action
+            android:id="@+id/action_patternStat_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_patternStat_to_stat"
+            app:destination="@id/stat" />
+        <argument
+            android:name="patternStatText"
+            app:argType="string"
+            android:defaultValue="scr" />
+        <argument
+            android:name="patternStatImage"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/patternMedia"
+        android:name="com.example.myapplicationooooo.patternMedia"
+        android:label="fragment_pattern_media"
+        tools:layout="@layout/fragment_pattern_media" >
+        <action
+            android:id="@+id/action_patternMedia_to_razdel_medit"
+            app:destination="@id/razdel_medit" />
+        <action
+            android:id="@+id/action_patternMedia_to_uoga"
+            app:destination="@id/uoga" />
+        <argument android:name="patternMedia"
+            app:argType="integer" />
+        <argument
+            android:name="patternMediaText"
+            app:argType="string" />
+        <argument android:name="patternMediaImage"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/razdel_breath"
+        android:name="com.example.myapplicationooooo.razdel_breath"
+        android:label="fragment_razdel_breath"
+        tools:layout="@layout/fragment_razdel_breath" >
+        <action
+            android:id="@+id/action_razdel_breath_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_razdel_breath_to_patternVideo"
+            app:destination="@id/patternVideo" />
+    </fragment>
+    <fragment
+        android:id="@+id/razdel_zaradka"
+        android:name="com.example.myapplicationooooo.razdel_zaradka"
+        android:label="fragment_razdel_zaradka"
+        tools:layout="@layout/fragment_razdel_zaradka" >
+        <action
+            android:id="@+id/action_razdel_zaradka_to_category"
+            app:destination="@id/category" />
+        <action
+            android:id="@+id/action_razdel_zaradka_to_patternVideo"
+            app:destination="@id/patternVideo" />
+    </fragment>
+    <fragment
+        android:id="@+id/patternVideo"
+        android:name="com.example.myapplicationooooo.patternVideo"
+        android:label="fragment_pattern_video"
+        tools:layout="@layout/fragment_pattern_video" >
+        <action
+            android:id="@+id/action_patternVideo_to_razdel_breath"
+            app:destination="@id/razdel_breath" />
+        <action
+            android:id="@+id/action_patternVideo_to_razdel_zaradka"
+            app:destination="@id/razdel_zaradka" />
+        <argument android:name="patternVideo"
+            app:argType="integer" />
+        <argument
+            android:name="patternVideoText"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.myapplicationooooo.registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_authorization"
+            app:destination="@id/authorization" />
+        <action
+            android:id="@+id/action_registration_to_category"
+            app:destination="@id/category" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorization"
+        android:name="com.example.myapplicationooooo.authorization"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorization_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_authorization_to_category"
+            app:destination="@id/category" />
+    </fragment>
+</navigation>

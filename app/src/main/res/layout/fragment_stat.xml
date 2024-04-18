@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    tools:context=".stat">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#e7c697"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/but_home_st"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/button_home" />
+
+        <ImageButton
+            android:id="@+id/but_prof_st"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/button_prof" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="1100dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            tools:context=".stat">
+
+            <ImageView
+                android:id="@+id/image_fon_stat"
+                android:layout_width="413dp"
+                android:layout_height="1276dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/fon5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewStat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Медитация"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_fon_stat" />
+
+            <TextView
+                android:id="@+id/textViewStat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="Йога"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <TextView
+                android:id="@+id/textViewStat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="Дыхание"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+            <TextView
+                android:id="@+id/textViewStat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="Утренняя зарядка"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginBottom="590dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_fon_stat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/but_stat_me1"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mest7" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_me2"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mest8" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_me3"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mest9" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_me4"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mest10" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginBottom="350dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_fon_stat"
+                app:layout_constraintVertical_bias="0.336">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/but_stat_uo1"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uost2" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_uo2"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uost3" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_uo3"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uost4" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_uo4"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uost5" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="1090dp"
+                app:layout_constraintBottom_toTopOf="@+id/image_fon_stat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/but_stat_du1"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/dust2" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_du2"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/dust3" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_du3"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/dust4" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_du4"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/dust5" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_marginBottom="440dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+                app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/but_stat_zr1"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/zrst2" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_zr2"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/zrst3" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_zr3"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/zrst4" />
+
+                    <ImageButton
+                        android:id="@+id/but_stat_zr_4"
+                        android:layout_width="130dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/zrst5" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

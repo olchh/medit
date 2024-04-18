@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".category">
+
+    <ImageView
+        android:id="@+id/image_fon_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/fon6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:srcCompat="@drawable/fon6" />
+
+    <androidx.cardview.widget.CardView
+android:id="@+id/cardView"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+app:cardBackgroundColor="#e7c697"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/but_stat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/button_stat" />
+
+        <ImageButton
+            android:id="@+id/but_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/button_prof" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+
+
+        android:layout_width="367dp"
+        android:layout_height="665dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".category">
+
+            <ImageButton
+                android:id="@+id/but_medit"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/me1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/but_medit_stat"
+                android:layout_width="150dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/mest1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/mest1" />
+
+            <ImageButton
+                android:id="@+id/but_uoga"
+                android:layout_width="150dp"
+                android:layout_height="147dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/uo1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_medit_stat"
+                tools:src="@drawable/uo1" />
+
+            <ImageButton
+                android:id="@+id/but_uoga_stat"
+                android:layout_width="150dp"
+                android:layout_height="207dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/uost1"
+                app:layout_constraintEnd_toStartOf="@+id/but_uoga"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_medit"
+                tools:src="@drawable/uost1" />
+
+            <TextView
+                android:id="@+id/textViewCategory1"
+                android:layout_width="134dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Все о звуковой медитации"
+                android:textAllCaps="true"
+                android:textColor="#808080"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/but_medit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textViewCategory2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="52dp"
+
+                android:text="Простая йога"
+                android:textAllCaps="true"
+
+                android:textColor="#808080"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/but_uoga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_medit_stat"
+                app:layout_constraintVertical_bias="0.83" />
+
+            <ImageButton
+                android:id="@+id/but_dax"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/du1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_uoga_stat" />
+
+            <ImageButton
+                android:id="@+id/but_du_stat"
+                android:layout_width="150dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/dust1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_uoga" />
+
+            <TextView
+                android:id="@+id/textViewCategory3"
+                android:layout_width="79dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="12dp"
+                android:text="Дыхание"
+                android:textAllCaps="true"
+                android:textColor="#808080"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/but_dax"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/but_stat_zar"
+                android:layout_width="150dp"
+                android:layout_height="213dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/zrst1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_dax" />
+
+            <ImageButton
+                android:id="@+id/but_zar"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/zr1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_du_stat" />
+
+            <TextView
+                android:id="@+id/textViewCategory4"
+                android:layout_width="114dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="28dp"
+                android:text="Упражнения"
+                android:textAllCaps="true"
+                android:textColor="#808080"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_du_stat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

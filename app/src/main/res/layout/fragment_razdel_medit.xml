@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".razdel_medit">
+
+    <ImageView
+        android:id="@+id/image_fon_razdel_medit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/fon6" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me1"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRazdelMedit1" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me6"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_raz_me4" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me5"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_raz_me3"
+        tools:src="@drawable/me6" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me3"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRazdelMedit2" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me4"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_raz_me2" />
+
+    <ImageButton
+        android:id="@+id/but_raz_me2"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/me3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_fon_razdel_medit" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#e7c697">
+
+        <ImageButton
+            android:id="@+id/button_naz1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/button_naz1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewRazdelMedit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="63dp"
+        android:text="Бинауральные звуковые медитации"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRazdelMedit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:text="Гиперактивные звуковые медитации"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_raz_me1" />
+
+    <TextView
+        android:id="@+id/textViewRazdelMedit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:text="о космосе"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_raz_me3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
