@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.asLiveData
 import com.example.myapplicationooooo.databinding.FragmentRegistrationBinding
 import com.example.myapplicationooooo.entity.MainDB
+import com.example.myapplicationooooo.entity.user
 
 class registration : Fragment() {
 
@@ -32,6 +33,7 @@ class registration : Fragment() {
 
         binding.buttonRegistration.setOnClickListener{
             Registration()
+            MAIN.navController.navigate(R.id.action_registration_to_authorization)
 
         }
 
@@ -43,31 +45,31 @@ class registration : Fragment() {
 
         database.getDao().getAllUser().asLiveData().observe(MAIN){ list ->
 
-            list.forEach{userdata ->
+            //list.forEach{userdata ->
 
-                if(binding.usLogin.text.toString() == userdata.login) {
-                    Toast.makeText(MAIN, "такой пользователь уже существует!", Toast.LENGTH_SHORT).show()
-                    return@forEach
+                //if(binding.usLogin.text.toString() == userdata.login) {
+                    //Toast.makeText(MAIN, "такой пользователь уже существует!", Toast.LENGTH_SHORT).show()
+                    //return@forEach
 
-                }
-                else{
+               // }
+                //else{
                     val us = user(null,
                         binding.usName.text.toString(),
                         binding.usLogin.text.toString(),
                         binding.usPassword.text.toString(),
-                        "")
+                        "R.drawable.iconprof1")
 
                     Thread{ //создание нового потока
                         database.getDao().insertUser(us)
                     }.start()
-                    MAIN.navController.navigate(R.id.action_registration_to_authorization)
+                    //MAIN.navController.navigate(R.id.action_registration_to_authorization)
                     Toast.makeText(MAIN, "зарегистрирован пользователь ${binding.usName.text}", Toast.LENGTH_SHORT).show()
 
 
                 }
             }
-        }
-    }
+        //}
+    //}
 
     companion object {
         @JvmStatic

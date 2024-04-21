@@ -32,7 +32,7 @@
         android:id="@+id/us_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="280dp"
         android:ems="10"
         android:hint="введите имя.."
         android:inputType="text"

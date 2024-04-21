@@ -30,7 +30,7 @@
         android:id="@+id/us_login_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="352dp"
         android:ems="10"
         android:hint="введите логин.."
         android:inputType="text"

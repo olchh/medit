@@ -51,10 +51,10 @@
         android:id="@+id/textprof1"
         android:layout_width="258dp"
         android:layout_height="18dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="256dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView12" />
 
@@ -62,10 +62,20 @@
         android:id="@+id/textprof2"
         android:layout_width="248dp"
         android:layout_height="30dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="300dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+    <ImageButton
+        android:id="@+id/image_button_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/iconprof1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView12" />
 

@@ -31,11 +31,6 @@ class MainActivity : AppCompatActivity() {
 
 
         changeStatusBarColor("#e7c697")
-
-
-
-
-
     }
     fun saveData(data: String){
         val editor = pref?.edit()//чтобы изм данные таблицы
@@ -46,9 +41,13 @@ class MainActivity : AppCompatActivity() {
     //отвечает за выход из приложения (очистка внутренней памяти в данном случае)
     override fun onDestroy() {
         super.onDestroy()
+        deleteData()
+    }
+    fun deleteData(){
         val editor = pref?.edit()
         editor?.clear()
         editor?.apply()
+
     }
 
     //панель сверху тем же цветом, что и cardView
