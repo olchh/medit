@@ -35,7 +35,7 @@ class authorization : Fragment() {
         binding.buttonAuthorization.setOnClickListener {
             Autorization()
 
-            MAIN.navController.navigate(R.id.action_authorization_to_category)
+
 
 
 
@@ -67,10 +67,11 @@ class authorization : Fragment() {
                                         """
 
                         MAIN.saveData(userString)
-                        //MAIN.navController.navigate(R.id.action_authorization_to_category)
 
                         count = 1
                         Toast.makeText(MAIN, "Пользователь: ${user.name} авторизирован", Toast.LENGTH_SHORT).show()
+                        MAIN.navController.navigate(R.id.action_authorization_to_category)
+                        return@forEach
                     }
                 }
             }

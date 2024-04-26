@@ -33,9 +33,6 @@
         <action
             android:id="@+id/action_category_to_authorization"
             app:destination="@id/authorization" />
-        <action
-            android:id="@+id/action_category_to_registration"
-            app:destination="@id/registration" />
     </fragment>
     <fragment
         android:id="@+id/razdel_medit"
@@ -169,30 +166,6 @@
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/registration"
-        android:name="com.example.myapplicationooooo.registration"
-        android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" >
-        <action
-            android:id="@+id/action_registration_to_category"
-            app:destination="@id/category" />
-        <action
-            android:id="@+id/action_registration_to_authorization"
-            app:destination="@id/authorization" />
-    </fragment>
-    <fragment
-        android:id="@+id/authorization"
-        android:name="com.example.myapplicationooooo.authorization"
-        android:label="fragment_authorization"
-        tools:layout="@layout/fragment_authorization" >
-        <action
-            android:id="@+id/action_authorization_to_category"
-            app:destination="@id/category" />
-        <action
-            android:id="@+id/action_authorization_to_registration"
-            app:destination="@id/registration" />
-    </fragment>
-    <fragment
         android:id="@+id/photo2"
         android:name="com.example.myapplicationooooo.photo"
         android:label="fragment_photo"
@@ -203,5 +176,26 @@
         <argument
             android:name="photoid"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.myapplicationooooo.registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_authorization"
+            app:destination="@id/authorization" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorization"
+        android:name="com.example.myapplicationooooo.authorization"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorization_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_authorization_to_category"
+            app:destination="@id/category" />
     </fragment>
 </navigation>

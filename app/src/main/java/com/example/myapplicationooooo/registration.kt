@@ -33,8 +33,7 @@ class registration : Fragment() {
 
         binding.buttonRegistration.setOnClickListener{
             Registration()
-            MAIN.navController.navigate(R.id.action_registration_to_authorization)
-
+            //MAIN.navController.navigate(R.id.action_registration_to_authorization)
         }
 
     }
@@ -42,34 +41,40 @@ class registration : Fragment() {
     private fun Registration(){
 
         val database = MainDB.getDB(MAIN)
+        var count = 0
 
         database.getDao().getAllUser().asLiveData().observe(MAIN){ list ->
 
-            //list.forEach{userdata ->
+            list.forEach{userdata ->
 
-                //if(binding.usLogin.text.toString() == userdata.login) {
-                    //Toast.makeText(MAIN, "такой пользователь уже существует!", Toast.LENGTH_SHORT).show()
-                    //return@forEach
+                if(binding.usLogin.text.toString() == userdata.login) {
 
-               // }
-                //else{
-                    val us = user(null,
-                        binding.usName.text.toString(),
-                        binding.usLogin.text.toString(),
-                        binding.usPassword.text.toString(),
-                        "R.drawable.iconprof1")
+                    count = 1
+                    return@forEach
 
-                    Thread{ //создание нового потока
-                        database.getDao().insertUser(us)
-                    }.start()
-                    //MAIN.navController.navigate(R.id.action_registration_to_authorization)
-                    Toast.makeText(MAIN, "зарегистрирован пользователь ${binding.usName.text}", Toast.LENGTH_SHORT).show()
+               }
 
-
-                }
             }
-        //}
-    //}
+            if(count==1){
+                Toast.makeText(MAIN, "такой пользователь уже существует!", Toast.LENGTH_SHORT).show()
+
+            }
+            if(count == 0){
+                val us = user(null,
+                    binding.usName.text.toString(),
+                    binding.usLogin.text.toString(),
+                    binding.usPassword.text.toString(),
+                    "R.drawable.iconprof1")
+
+                Thread{ //создание нового потока
+                    database.getDao().insertUser(us)
+                }.start()
+
+                Toast.makeText(MAIN, "зарегистрирован пользователь ${binding.usName.text}", Toast.LENGTH_SHORT).show()
+                MAIN.navController.navigate(R.id.action_registration_to_authorization)
+            }
+        }
+    }
 
     companion object {
         @JvmStatic

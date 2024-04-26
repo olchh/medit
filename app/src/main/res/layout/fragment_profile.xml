@@ -10,12 +10,14 @@
     <ImageView
         android:id="@+id/image_fon_profile"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="842dp"
         android:src="@drawable/fon5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView12"
@@ -48,35 +50,202 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textprof1"
-        android:layout_width="258dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="256dp"
+        android:id="@+id/textprof_name"
+        android:layout_width="97dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="100dp"
         android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toEndOf="@+id/image_button_icon"
         app:layout_constraintTop_toBottomOf="@+id/cardView12" />
 
     <TextView
-        android:id="@+id/textprof2"
-        android:layout_width="248dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="300dp"
+        android:id="@+id/textprof_login"
+        android:layout_width="97dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="196dp"
         android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toEndOf="@+id/image_button_icon"
         app:layout_constraintTop_toBottomOf="@+id/cardView12" />
 
     <ImageButton
         android:id="@+id/image_button_icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="72dp"
+        android:background="@null"
+        android:scaleType="fitXY"
         android:src="@drawable/iconprof1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+    <TextView
+        android:id="@+id/textprof_fam"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="152dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/image_button_icon"
+        app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+    <TextView
+        android:id="@+id/textprof_ye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toEndOf="@+id/image_button_icon"
+        app:layout_constraintTop_toBottomOf="@+id/textprof_login" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="92dp"
+        android:text="Рекомендации"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_icon" />
+
+    <TextView
+        android:id="@+id/textprof_rek1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textprof_rek2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textprof_rek1" />
+
+    <TextView
+        android:id="@+id/textprof_rek3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textprof_rek2" />
+
+    <TextView
+        android:id="@+id/textprof_rek4"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textprof_rek3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="32dp"
+        android:text="возраст"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_icon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:text="1."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="2."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="3."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="4."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

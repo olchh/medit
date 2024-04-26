@@ -31,10 +31,9 @@ class profile : Fragment() {
                                         {
                                             "user":{
                                                 "name" : "имя",
-                                                "login" : "логин"
-                                                "id" : 1
+                                                "login" : "логин",
+                                                "id" : "1",
                                                 "image" : "R.drawable.iconprof1"
-                                                
                                             }
                                         }
                                         """)!!
@@ -42,12 +41,12 @@ class profile : Fragment() {
 
 
 
-        binding.textprof1.text = mainObject.getJSONObject("user").getString("name")
-        binding.textprof2.text = mainObject.getJSONObject("user").getString("login")
+        binding.textprofName.text = mainObject.getJSONObject("user").getString("name")
+        binding.textprofLogin.text = mainObject.getJSONObject("user").getString("login")
 
-        val drawableId: Int = resources.getIdentifier(mainObject.getJSONObject("user").getString("image"), "drawable", "com.example.myapplicationooooo")
-        val drawable: Drawable? = ContextCompat.getDrawable(MAIN, drawableId)
-        binding.imageButtonIcon.background = drawable
+        val drawableId: Int = resources.getIdentifier(mainObject.getJSONObject("user").getString("image"), "drawable", "res")
+        //val drawable: Drawable? = ContextCompat.getDrawable(MAIN, drawableId)
+        binding.imageButtonIcon.setBackgroundResource(drawableId)
 
 
         binding.butStutPr.setOnClickListener {
