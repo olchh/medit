@@ -12,7 +12,6 @@ class razdel_medit : Fragment() {
     private lateinit var binding : FragmentRazdelMeditBinding
     val bundle = Bundle()
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,7 +27,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe1.setOnClickListener{
-            val music = R.raw.binaur_1
+            val music = 1
             //подгружаем music
             bundle.putInt("patternMedia", music)
 
@@ -43,7 +42,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe2.setOnClickListener{
-            val music = R.raw.binaur_2
+            val music = 2
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.memedia2
@@ -55,7 +54,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe3.setOnClickListener{
-            val music = R.raw.giper_1
+            val music = 3
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.memedia3
@@ -67,7 +66,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe4.setOnClickListener{
-            val music = R.raw.giper_2
+            val music = 4
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.memedia4
@@ -79,7 +78,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe5.setOnClickListener{
-            val music = R.raw.otk_cosmos
+            val music = 5
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.memedia5
@@ -91,7 +90,7 @@ class razdel_medit : Fragment() {
         }
 
         binding.butRazMe6.setOnClickListener{
-            val music = R.raw.cosmos
+            val music = 6
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.memedia6
@@ -104,7 +103,6 @@ class razdel_medit : Fragment() {
     }
 
     companion object {
-
         @JvmStatic
         fun newInstance() =
             razdel_medit()

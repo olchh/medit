@@ -10,7 +10,6 @@ import com.example.myapplicationooooo.databinding.FragmentRazdelUogaBinding
 
 class razdel_uoga : Fragment() {
 
-
     private lateinit var binding : FragmentRazdelUogaBinding
     val bundle = Bundle()
 
@@ -29,7 +28,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo1.setOnClickListener{
-            val music = R.raw.uo1
+            val music = 7
             //подгружаем music
             bundle.putInt("patternMedia", music)
 
@@ -44,7 +43,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo2.setOnClickListener{
-            val music = R.raw.uo2
+            val music = 8
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.uomedia2
@@ -56,7 +55,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo3.setOnClickListener{
-            val music = R.raw.uo3
+            val music = 9
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.uomedia3
@@ -68,7 +67,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo4.setOnClickListener{
-            val music = R.raw.uo4
+            val music = 10
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.uomedia4
@@ -80,7 +79,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo5.setOnClickListener{
-            val music = R.raw.uo5
+            val music = 11
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.uomedia5
@@ -92,7 +91,7 @@ class razdel_uoga : Fragment() {
         }
 
         binding.butRazUo6.setOnClickListener{
-            val music = R.raw.uo6
+            val music = 12
             bundle.putInt("patternMedia", music)
 
             val image = R.drawable.uomedia6
@@ -108,6 +107,5 @@ class razdel_uoga : Fragment() {
         @JvmStatic
         fun newInstance() =
             razdel_uoga()
-
     }
 }

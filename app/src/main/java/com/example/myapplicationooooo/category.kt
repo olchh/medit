@@ -46,39 +46,21 @@ class category : Fragment() {
 
 
         binding.butMeditStat.setOnClickListener{
-            val text = getString(R.string.statme)
-            //подгружаем текст
-            bundle.putString("patternStatText", text)
-
-            val image = R.drawable.mestos1
-            //подгружаем картинку
-            bundle.putInt("patternStatImage", image)
+            bundle.putInt("patternStatId", 1)
             findNavController().navigate(R.id.action_category_to_patternStat, bundle)
         }
 
         binding.butUogaStat.setOnClickListener{
-            val text = getString(R.string.statuo)
-            bundle.putString("patternStatText", text)
-
-            val image = R.drawable.uostos1
-            bundle.putInt("patternStatImage", image)
+            bundle.putInt("patternStatId", 6)
             findNavController().navigate(R.id.action_category_to_patternStat, bundle)
         }
 
         binding.butDuStat.setOnClickListener{
-            val text = getString(R.string.statdu)
-            bundle.putString("patternStatText", text)
-
-            val image = R.drawable.dustos1
-            bundle.putInt("patternStatImage", image)
+            bundle.putInt("patternStatId", 11)
             findNavController().navigate(R.id.action_category_to_patternStat, bundle)
         }
         binding.butStatZar.setOnClickListener{
-            val text = getString(R.string.statzr)
-            bundle.putString("patternStatText", text)
-
-            val image = R.drawable.zrstos1
-            bundle.putInt("patternStatImage", image)
+            bundle.putInt("patternStatId", 16)
             findNavController().navigate(R.id.action_category_to_patternStat, bundle)
         }
     }

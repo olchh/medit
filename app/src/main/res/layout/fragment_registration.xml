@@ -32,7 +32,7 @@
         android:id="@+id/us_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="216dp"
         android:ems="10"
         android:hint="введите имя.."
         android:inputType="text"
@@ -45,7 +45,7 @@
         android:id="@+id/us_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="введите логин.."
         android:inputType="text"
@@ -92,5 +92,32 @@
         app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+    <EditText
+        android:id="@+id/us_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="введите фамилию.."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/us_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <EditText
+        android:id="@+id/us_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="ведите возраст.."
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/us_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

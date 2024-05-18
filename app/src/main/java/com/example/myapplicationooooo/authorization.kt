@@ -34,60 +34,70 @@ class authorization : Fragment() {
 
         binding.buttonAuthorization.setOnClickListener {
             Autorization()
-
-
-
-
-
         }
-
     }
 
     private fun Autorization(){
-        val database = MainDB.getDB(MAIN)
-        database.getDao().getAllUser().asLiveData().observe(MAIN){ list ->
+        try {
+            if (EmptyFields()) {
+                val database = MainDB.getDB(MAIN)
+                database.getDao().getAllUser().asLiveData().observe(MAIN) { list ->
 
-            list.forEach{user ->
+                    list.forEach { user ->
 
-                if(binding.usLoginA.text.toString() == user.login){
+                        if (binding.usLoginA.text.toString() == user.login) {
 
-                    if(binding.usPassA.text.toString() == user.password){
+                            if (binding.usPassA.text.toString() == user.password) {
 
 
-                        var userString = """
+                                var userString = """
                                         {
                                             "user":{
                                                 "name" : "${user.name}",
+                                                "surname" : "${user.surname}",
+                                                "age": "${user.age}",
                                                 "login" : "${user.login}",
-                                                "id" : "${user.id}",
+                                                "id" : "${user.id_user}",
                                                 "image" : "${user.image}"
-                                                
                                             }
                                         }
                                         """
+                                MAIN.saveData(userString)
 
-                        MAIN.saveData(userString)
-
-                        count = 1
-                        Toast.makeText(MAIN, "Пользователь: ${user.name} авторизирован", Toast.LENGTH_SHORT).show()
-                        MAIN.navController.navigate(R.id.action_authorization_to_category)
-                        return@forEach
+                                count = 1
+                                Toast.makeText(
+                                    MAIN,
+                                    "пользователь: ${user.name} авторизирован",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                MAIN.navController.navigate(R.id.action_authorization_to_category)
+                                return@forEach
+                            }
+                        }
+                    }
+                    if (count == 0) {
+                        Toast.makeText(MAIN, "неверный логин или пароль", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
-            if (count == 0){
-                Toast.makeText(MAIN, "Неверный логин или пароль", Toast.LENGTH_SHORT).show()
-            }
         }
-
+        catch (e:Exception){
+            Toast.makeText(MAIN, "error ${e}", Toast.LENGTH_SHORT).show()
+        }
     }
-
-
-
+    private fun EmptyFields(): Boolean {
+        if (binding.usLoginA.text.toString() == "" ||
+            binding.usPassA.text.toString() == "") {
+            Toast.makeText(MAIN, "заполнены не все поля", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        else{
+            return true
+        }
+    }
     companion object {
         @JvmStatic
         fun newInstance() =
             authorization()
-
     }
 }

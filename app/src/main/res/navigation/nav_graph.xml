@@ -98,11 +98,7 @@
             android:id="@+id/action_patternStat_to_stat"
             app:destination="@id/stat" />
         <argument
-            android:name="patternStatText"
-            app:argType="string"
-            android:defaultValue="scr" />
-        <argument
-            android:name="patternStatImage"
+            android:name="patternStatId"
             app:argType="integer" />
     </fragment>
     <fragment
@@ -117,11 +113,6 @@
             android:id="@+id/action_patternMedia_to_uoga"
             app:destination="@id/uoga" />
         <argument android:name="patternMedia"
-            app:argType="integer" />
-        <argument
-            android:name="patternMediaText"
-            app:argType="string" />
-        <argument android:name="patternMediaImage"
             app:argType="integer" />
     </fragment>
     <fragment

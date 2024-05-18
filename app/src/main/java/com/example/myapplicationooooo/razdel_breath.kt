@@ -28,7 +28,7 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath1.setOnClickListener{
-            val video = R.raw.videodu1
+            val video = 1
             //подгружаем video
             bundle.putInt("patternVideo", video)
 
@@ -40,7 +40,7 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath2.setOnClickListener{
-            val video = R.raw.videodu2
+            val video = 2
             //подгружаем video
             bundle.putInt("patternVideo", video)
 
@@ -52,7 +52,7 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath3.setOnClickListener{
-            val video = R.raw.videodu3
+            val video = 3
             //подгружаем video
             bundle.putInt("patternVideo", video)
 
@@ -64,7 +64,7 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath4.setOnClickListener{
-            val video = R.raw.videodu4
+            val video = 4
             //подгружаем video
             bundle.putInt("patternVideo", video)
 
@@ -76,10 +76,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath5.setOnClickListener{
-            val video = R.raw.videodu5
+            val video = 5
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu5)
             //подгружаем текст
@@ -88,10 +87,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath6.setOnClickListener{
-            val video = R.raw.videodu6
+            val video = 6
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu6)
             //подгружаем текст
@@ -100,10 +98,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath7.setOnClickListener{
-            val video = R.raw.videodu7
+            val video = 7
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu7)
             //подгружаем текст
@@ -112,10 +109,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath8.setOnClickListener{
-            val video = R.raw.videodu8
+            val video = 8
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu8)
             //подгружаем текст
@@ -124,10 +120,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath9.setOnClickListener{
-            val video = R.raw.videodu9
+            val video = 9
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu9)
             //подгружаем текст
@@ -136,10 +131,9 @@ class razdel_breath : Fragment() {
         }
 
         binding.buttonRazdelBreath10.setOnClickListener{
-            val video = R.raw.videodu10
+            val video = 10
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideodu10)
             //подгружаем текст

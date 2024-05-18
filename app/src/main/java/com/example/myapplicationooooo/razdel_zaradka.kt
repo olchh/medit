@@ -27,10 +27,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr1.setOnClickListener{
-            val video = R.raw.videozr1
+            val video = 11
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr1)
             //подгружаем текст
@@ -39,10 +38,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr2.setOnClickListener{
-            val video = R.raw.videozr2
+            val video = 12
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr2)
             //подгружаем текст
@@ -51,10 +49,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr3.setOnClickListener{
-            val video = R.raw.videozr3
+            val video = 13
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr3)
             //подгружаем текст
@@ -63,10 +60,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr4.setOnClickListener{
-            val video = R.raw.videozr4
+            val video = 14
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr4)
             //подгружаем текст
@@ -75,10 +71,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr5.setOnClickListener{
-            val video = R.raw.videozr5
+            val video = 15
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr5)
             //подгружаем текст
@@ -87,10 +82,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr6.setOnClickListener{
-            val video = R.raw.videozr6
+            val video = 16
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr6)
             //подгружаем текст
@@ -99,10 +93,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr7.setOnClickListener{
-            val video = R.raw.videozr7
+            val video = 17
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr7)
             //подгружаем текст
@@ -111,10 +104,9 @@ class razdel_zaradka : Fragment() {
         }
 
         binding.butRazZr8.setOnClickListener{
-            val video = R.raw.videozr8
+            val video = 18
             //подгружаем video
             bundle.putInt("patternVideo", video)
-
 
             val text = getString(R.string.textvideozr8)
             //подгружаем текст
@@ -122,7 +114,6 @@ class razdel_zaradka : Fragment() {
             findNavController().navigate(R.id.action_razdel_zaradka_to_patternVideo, bundle)
         }
     }
-
 
     companion object {
         @JvmStatic
